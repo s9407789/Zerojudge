@@ -1,0 +1,9 @@
+#include<stdio.h>
+
+int main() {
+    int w = 0;
+    scanf("%d", &w);
+    w = (w > 50) * (w - 1) + (w <= 50) * w;
+    printf("%d\n", w);
+    return 0;
+}
