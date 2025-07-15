@@ -4,6 +4,7 @@ int main() {
     int a, b, c, d, degree = 0;
     scanf("%d %d %d %d", &a, &b, &c, &d);
     while (!(a == 0 && b == 0 && c == 0 && d == 0)) {
+        degree = 0;
         degree += 360*2;
         degree += ((a - b + 40) % 40) * 360 / 40;
         degree += 360;
