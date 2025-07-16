@@ -1,0 +1,13 @@
+#include<stdio.h>
+
+int main () {
+    int n;
+    while (scanf("%d", &n) != EOF) {
+        int region = 2;
+        for (int i = n; i > 0; i--) {
+            region +=  (i - 1) * 2;
+        }
+        printf("%d\n", region);
+    }
+    return 0;
+}
